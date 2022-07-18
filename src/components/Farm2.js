@@ -92,19 +92,31 @@ export default class Chart extends React.Component {
                 <div  style={{paddingTop:'16px'}}>
                     <div class='earnings' style={{display:'flex'}}>
                         <div color="secondary" font-size="12px" class="sc-gsTCUz dXVGhj">GRAIL Earned</div>
-                        
+                         <span>
+                        {9000}{" "}
+                        <img
+                        height="25"
+                        width="25"
+                        src="https://coin.top/production/logo/usdtlogo.png"
+                         />
+                        TESTUSDT
+                        </span>
                     </div>
                     <div class="earnings_box">
                         <h2 color="textDisabled" class="sc-gsTCUz sc-idOhPF dcRjaX lnUPhx">0</h2>
                         <div class="sc-gInsOo grsaJH">
-                            <button disabled="" type="button" class="sc-dlfnbm IcZWJ">Harvest</button>
+                            <button onClick={90} type="button" class="sc-dlfnbm IcZWJ">Harvest</button>
                         </div>
                     </div>
                     <div class="staking_box">
                         <div color="secondary" font-size="12px" class="sc-gsTCUz dXVGhj">AVS-ETH LP Staked</div>
-                        
+                        <span>{900}{""} YST </span>
                     </div>
-                    <button type="button" class="approve_button">Approve Contract</button>
+                  <form className="input-group button">
+                    <input type="text" id="amount" placeholder="Enter the amount" />
+                    <button type="button" class='approve_button' onClick={stake}>
+                      Approve & Freeze
+                     </button>
                 </div>
                 <div class="sc-tYoTV jYOTaZ"></div>
                 <div aria-label="Hide or show expandable content" role="button" class="sc-bTvRPi bhoBuD">
