@@ -13,7 +13,7 @@ export default class Chart extends React.Component {
      
     render(){
         return (
-            <div class="farm_box">
+      <div class="farm_box">
         <div class="farm_box_bg"></div>
         <div class="farm_name">
           <div width="64" height="64" class="farm_banner_box">
@@ -144,14 +144,20 @@ export default class Chart extends React.Component {
             </div>
           </div>
           <div class="staking_box"></div>
-          <form className="inputDiv">
+          <form className="input-group">
             <input
               type="text"
               id="amount"
               placeholder="Enter the amount to stake"
             />
-            <button type="button" class="approve_button" onClick={0}>
-              Approve and Freeze
+
+            <button
+              type="button"
+              style={{ fontSize: "15px" }}
+              onClick={0}
+              class="approve_button"
+            >
+              Approve Contract
             </button>
           </form>
         </div>
@@ -162,7 +168,7 @@ export default class Chart extends React.Component {
           class="sc-bTvRPi bhoBuD"
         >
           <div>
-            <button class="approve_button" onClick={90}>
+            <button class="approve_button" onClick={withdraw}>
               Unstake all{" "}
             </button>
           </div>
